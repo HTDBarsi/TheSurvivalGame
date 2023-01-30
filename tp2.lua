@@ -32,11 +32,11 @@ repeat task.wait(_G.time)
         end
     elseif keys.S then
         for i = 1,_G.dist do task.wait()
-            hum.CFrame = hum.CFrame:Lerp(hum.CFrame+hum.CFrame.LookVector*_G.speed,i/_G.dist)
+            hum.CFrame = hum.CFrame:Lerp(hum.CFrame-hum.CFrame.LookVector*_G.speed,i/_G.dist)
         end
     elseif keys.A then
         for i = 1,_G.dist do task.wait()
-            hum.CFrame = hum.CFrame:Lerp(hum.CFrame+-hum.CFrame.RightVector*_G.speed,i/_G.dist)
+            hum.CFrame = hum.CFrame:Lerp(hum.CFrame-hum.CFrame.RightVector*_G.speed,i/_G.dist)
         end
     elseif keys.D then
         for i = 1,_G.dist do task.wait()
